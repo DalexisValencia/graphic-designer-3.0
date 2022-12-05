@@ -1,0 +1,95 @@
+.presentations {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: $secondary-brand-color;
+    overflow: hidden;
+    padding: 50px;
+    &[data-anchor="Page 1"] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.container {
+    padding: 0 $padding-horizontal;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0px auto;
+    z-index: 2;
+    position: relative;
+    pointer-events: none;
+}
+
+.initial-slide {
+    // position: absolute;
+    // bottom: 0;
+    color: $primary-brand-color;
+    text-align: center;
+    h1 {
+        font-family: 'today-shop-Bold';
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 65px;
+    }
+    p {
+        margin: 0px auto;
+        width: 70%;
+        min-width: 500px;
+        font-family: 'TodaySHOP-Regular';
+    }
+    .gallery-designers {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        min-width: 500px;
+        margin: 20px auto;
+        img {
+            width: 150px;
+            transition: 0.2s all;
+            cursor: pointer;
+            pointer-events: all;
+            box-shadow: 0px 0px 10px rgba($tertiary-brand-color, 0.3);
+            &:hover {
+                transform: scale(1.20);
+                box-shadow: 0px 0px 10px rgba($tertiary-brand-color, 0.7);
+            }
+        }
+    }
+}
+
+a.button,
+button {
+    @extend %button;
+    margin: 15px 0;
+    padding: $padding-horizontal $padding-horizontal * 3;
+    background-color: $tertiary-brand-color;
+    color: $sixth-brand-color;
+    font-family: 'TodaySHOP-Regular';
+    border-radius: 2px;
+    transition: 0.5s all;
+    pointer-events: all;
+    &:hover {
+        background-color: $seventh-brand-color;
+    }
+}
+
+//labels
+.orange-label {
+    color: $tertiary-brand-color;
+    font-weight: bold;
+}
+
+.pg-pips {
+    ul {
+        li {
+            a.active {
+                background-color: $tertiary-brand-color;
+            }
+        }
+    }
+}

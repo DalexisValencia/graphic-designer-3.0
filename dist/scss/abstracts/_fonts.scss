@@ -1,0 +1,18 @@
+$path: '../fonts';
+@font-face {
+    font-family: 'today-shop-Bold';
+    src: url('#{$path}/TodaySHOP-Bold.otf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'TodaySHOP-Regular';
+    src: url('#{$path}/TodaySHOP-Regular.otf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('#{$path}/Montserrat-Medium.ttf');
+    font-display: fallback;
+}

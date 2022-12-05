@@ -1,0 +1,18 @@
+@import "abstracts/fonts";
+@import "abstracts/normalize";
+@import "abstracts/variables";
+//base
+@import "base/queries";
+@import "base/layout";
+//components
+@import "components/buttons";
+@import "components/footer";
+@import "components/header";
+@import "components/input";
+@import "components/selects";
+//pages 
+@import "pages/home";
+@import "pages/timeline";
+@import "pages/parallax";
+@import "pages/designer1";
+@import "pages/designer2";

@@ -1,0 +1,64 @@
+.designer-1 {
+    background: $secondary-brand-color;
+    // background-image: url('../img/parallax/shared/lines-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 12px;
+        font-family: 'Montserrat-Medium';
+        color: $fourth-brand-color;
+    }
+    >.container {
+        pointer-events: all;
+        position: relative;
+        &::before,
+        &::after {
+            background-repeat: no-repeat;
+            position: absolute;
+            content: "";
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+        }
+        &::before {
+            top: -10px;
+            left: 50px;
+            background-image: url('../img/parallax/shared/splash-circle.png');
+        }
+        &::after {
+            top: -10px;
+            right: 70px;
+            width: 90px;
+            height: 90px;
+            background-image: url('../img/parallax/shared/splash-circle.png');
+        }
+    }
+}
+
+.header-designer {
+    width: 100%;
+    max-width: 800px;
+    margin: 0px auto;
+    position: relative;
+    h1 {
+        color: $tertiary-brand-color;
+        font-family: 'today-shop-Bold';
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &::before {
+        background-repeat: no-repeat;
+        position: absolute;
+        content: "";
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        bottom: -200px;
+        left: -134px;
+        background-image: url('../img/parallax/shared/lines.png');
+    }
+}

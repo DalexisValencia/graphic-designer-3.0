@@ -1,0 +1,11 @@
+%maxWidth {
+    width: 95%;
+    max-width: $max-width;
+    margin: 0px auto;
+}
+
+%bgImage {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
