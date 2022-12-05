@@ -14,16 +14,30 @@
             filter: blur(4px);
             position: absolute;
         }
-        border: 1px dashed red;
         h1 {
             color: $primary-brand-color;
             font-family: 'today-shop-Bold';
+            font-size: 44px;
+        }
+        p {
+            width: 80%;
+            margin: 0px auto;
+            color: $fourth-brand-color;
+            font-family: 'Montserrat-Medium';
+            font-size: 12px;
+            text-align: center;
         }
     }
 }
 
 .designer-data {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 .over-container {
