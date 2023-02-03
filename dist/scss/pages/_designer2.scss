@@ -7,6 +7,7 @@
         text-align: center;
         color: $primary-brand-color;
         position: relative;
+        z-index: 1;
         &::after {
             content: "";
             @extend %bgImage;
@@ -25,6 +26,11 @@
             position: relative;
             width: max-content;
             margin: 0px auto;
+        }
+    }
+    &.pg-page {
+        .container {
+            pointer-events: all;
         }
     }
     a.button {
@@ -50,13 +56,69 @@
 }
 
 section.designer-features {
+    border: 1px dashed red;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    padding: 10px 25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 2vw 0;
     position: relative;
-    &::before {
+    max-width: 900px;
+    margin: 0px auto;
+    .designer-features--card {
+        width: 45%;
+        border-radius: 10px;
+        padding: 15px;
+        border: 1px solid white;
+        margin: 5px;
+        display: flex;
+        align-items: flex-start;
+        &:nth-child(3),
+        &:nth-child(4) {
+            align-items: flex-end;
+            .features--card__wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+            }
+        }
+        &:nth-child(1),
+        &:nth-child(4) {
+            background-color: red;
+        }
+        .features--card__number {
+            font-size: 7vw;
+        }
+        .features--card__wrapper {
+            border: 1px solid blue;
+            .features--card__content {
+                border: 2px dashed greenyellow;
+                text-align: left;
+                margin-left: 8px;
+            }
+            .features--card__icon {
+                display: block;
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            }
+        }
+    }
+    .features--card__center {
+        width: 100px;
+        min-height: 100px;
+        min-width: 100px;
+        width: 10vw;
+        height: 10vw;
+        position: absolute;
+        border-radius: 50%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: yellow;
+    }
+    /* &::before {
         content: "";
         top: 0;
         right: 0;
@@ -65,7 +127,7 @@ section.designer-features {
         background-color: rgba($secondary-brand-color, 0.8);
         filter: blur(4px);
         position: absolute;
-    }
+    }*/
     .year-image {
         position: relative;
         z-index: 1;
