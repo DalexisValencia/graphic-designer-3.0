@@ -68,90 +68,6 @@ section.designer-features {
     position: relative;
     max-width: 900px;
     margin: 0px auto;
-    .designer-features--card {
-        transition: all 400ms cubic-bezier(.47, 1.64, .41, .8);
-        cursor: pointer;
-        width: 45%;
-        border-radius: 6px;
-        padding: 15px;
-        border: 2px solid white;
-        background-color: $tertiary-brand-color;
-        margin: 5px;
-        display: flex;
-        align-items: flex-start;
-        &:nth-child(3),
-        &:nth-child(4) {
-            align-items: flex-end;
-            .features--card__wrapper {
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column-reverse;
-            }
-        }
-        &:nth-child(1),
-        &:nth-child(4) {
-            background-color: $secondary-brand-color;
-            .features--card__number {
-                color: $primary-brand-color;
-            }
-            .features--card__wrapper {
-                .features--card__content {
-                    .card__content--title,
-                    .card__content--text {
-                        color: $primary-brand-color;
-                    }
-                }
-            }
-        }
-        .features--card__number {
-            line-height: 0.8;
-            color: $secondary-brand-color;
-            font: {
-                family: 'Futura-condensed';
-                size: 9.5vw;
-            }
-        }
-        .features--card__wrapper {
-            width: 100%;
-            .features--card__content {
-                text-align: left;
-                margin-left: 8px;
-                .card__content--title {
-                    color: $secondary-brand-color;
-                    letter-spacing: 0.75px;
-                    text-transform: uppercase;
-                    font: {
-                        size: 19px;
-                        family: 'today-shop-Bold';
-                        weight: bold;
-                    }
-                }
-                .card__content--text {
-                    height: 65px;
-                    color: $secondary-brand-color;
-                    margin-bottom: 10px;
-                    font: {
-                        size: 13px;
-                        family: 'Montserrat-Medium';
-                    }
-                }
-            }
-            .features--card__icon {
-                display: block;
-                width: 45px;
-                height: 45px;
-                margin: 15px 0;
-                margin-left: 10px;
-            }
-        }
-        &:hover {
-            box-shadow: 0px 0px 10px rgba($tertiary-brand-color, 0.5);
-            position: relative;
-            z-index: 1;
-            transform: scale(1.03);
-        }
-    }
     .features--card__center {
         width: 100px;
         min-height: 100px;
@@ -198,7 +114,7 @@ section.designer-features {
             transform: scale(1.7);
             .question-symbol {
                 opacity: 0;
-                margin-top: -113px;
+                margin-top: -100%;
             }
             .question {
                 opacity: 1;

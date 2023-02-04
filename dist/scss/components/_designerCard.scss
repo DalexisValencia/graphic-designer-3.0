@@ -1,0 +1,95 @@
+.designer-features--card {
+    transition: all 400ms cubic-bezier(.47, 1.64, .41, .8);
+    cursor: pointer;
+    width: 45%;
+    border-radius: 6px;
+    padding: 15px;
+    border: 2px solid white;
+    margin: 5px;
+    display: flex;
+    // styles to yellow card
+    &.yellow-card {
+        background-color: $tertiary-brand-color;
+        align-items: flex-start;
+        .features--card__number {
+            color: $secondary-brand-color;
+        }
+        .features--card__wrapper {
+            .features--card__content {
+                .card__content--title,
+                .card__content--text {
+                    color: $secondary-brand-color;
+                }
+            }
+        }
+    }
+    &.black-card {
+        background-color: $secondary-brand-color;
+        .features--card__number {
+            color: $primary-brand-color;
+        }
+        .features--card__wrapper {
+            .features--card__content {
+                .card__content--title,
+                .card__content--text {
+                    color: $primary-brand-color;
+                }
+            }
+        }
+    }
+    &:nth-child(3),
+    &:nth-child(4) {
+        align-items: flex-end;
+        .features--card__wrapper {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+    }
+    .features--card__number {
+        line-height: 0.8;
+        font: {
+            family: 'Futura-condensed';
+            size: 9.5vw;
+        }
+    }
+    .features--card__wrapper {
+        width: 100%;
+        .features--card__content {
+            text-align: left;
+            margin-left: 8px;
+            .card__content--title {
+                letter-spacing: 0.75px;
+                text-transform: uppercase;
+                font: {
+                    size: 19px;
+                    family: 'today-shop-Bold';
+                    weight: bold;
+                }
+            }
+            .card__content--text {
+                height: 65px;
+                color: $secondary-brand-color;
+                margin-bottom: 10px;
+                font: {
+                    size: 13px;
+                    family: 'Montserrat-Medium';
+                }
+            }
+        }
+        .features--card__icon {
+            display: block;
+            width: 45px;
+            height: 45px;
+            margin: 15px 0;
+            margin-left: 10px;
+        }
+    }
+    &:hover {
+        box-shadow: 0px 0px 10px rgba($tertiary-brand-color, 0.5);
+        position: relative;
+        z-index: 1;
+        transform: scale(1.03);
+    }
+}

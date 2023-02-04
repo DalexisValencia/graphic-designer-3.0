@@ -1,0 +1,25 @@
+.despedida {
+    h1 {
+        color: $primary-brand-color;
+        font-family: 'today-shop-Bold';
+        font-size: 44px;
+    }
+    p {
+        width: 100%;
+        margin: 0px auto;
+        color: $fourth-brand-color;
+        font-family: 'Montserrat-Medium';
+        font-size: 12px;
+        text-align: center;
+        &.presentation {
+            text-align: left;
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+}
+
+.over-container {
+    position: relative;
+    z-index: 1;
+}
