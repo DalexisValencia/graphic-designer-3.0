@@ -91,3 +91,11 @@
          }
      }
  }
+ 
+ .encuesta-images {
+     display: flex;
+     justify-content: space-around;
+     img {
+         width: 48%;
+     }
+ }
