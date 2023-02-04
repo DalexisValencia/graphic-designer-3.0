@@ -66,10 +66,13 @@ section.designer-features {
     max-width: 900px;
     margin: 0px auto;
     .designer-features--card {
+        transition: 0.5s all;
+        cursor: pointer;
         width: 45%;
         border-radius: 10px;
         padding: 15px;
-        border: 1px solid white;
+        border: 2px solid white;
+        background-color: $tertiary-brand-color;
         margin: 5px;
         display: flex;
         align-items: flex-start;
@@ -84,24 +87,61 @@ section.designer-features {
         }
         &:nth-child(1),
         &:nth-child(4) {
-            background-color: red;
+            background-color: $secondary-brand-color;
+            .features--card__number {
+                color: $primary-brand-color;
+            }
+            .features--card__wrapper {
+                .features--card__content {
+                    .card__content--title,
+                    .card__content--text {
+                        color: $primary-brand-color;
+                    }
+                }
+            }
         }
         .features--card__number {
-            font-size: 7vw;
+            line-height: 0.8;
+            color: $secondary-brand-color;
+            font: {
+                family: 'Futura-condensed';
+                size: 7vw;
+            }
         }
         .features--card__wrapper {
-            border: 1px solid blue;
             .features--card__content {
-                border: 2px dashed greenyellow;
                 text-align: left;
                 margin-left: 8px;
+                .card__content--title {
+                    color: $secondary-brand-color;
+                    letter-spacing: 0.75px;
+                    font: {
+                        size: 17px;
+                        family: 'today-shop-Bold';
+                        weight: bold;
+                    }
+                }
+                .card__content--text {
+                    color: $secondary-brand-color;
+                    margin-bottom: 10px;
+                    font: {
+                        size: 13px;
+                        family: 'Montserrat-Medium';
+                    }
+                }
             }
             .features--card__icon {
                 display: block;
-                width: 100px;
-                height: 100px;
+                width: 75px;
+                height: 75px;
                 background-color: blue;
             }
+        }
+        &:hover {
+            box-shadow: 0px 0px 10px rgba($tertiary-brand-color, 0.5);
+            position: relative;
+            z-index: 1;
+            transform: scale(1.05);
         }
     }
     .features--card__center {

@@ -16,3 +16,9 @@ $path: '../fonts';
     src: url('#{$path}/Montserrat-Medium.ttf');
     font-display: fallback;
 }
+
+@font-face {
+    font-family: 'Futura-condensed';
+    src: url('#{$path}/Futura-medium-condensed.ttf');
+    font-display: fallback;
+}
