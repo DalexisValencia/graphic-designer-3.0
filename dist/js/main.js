@@ -68,4 +68,19 @@
         })
     });
 
+    //Open Modal
+    $(".designer-features--card").on('click', function() {
+        const identify = $(this).attr("data-attr-id");
+        $(".modal-wrapper").addClass('hidden');
+        $("#myModal").removeClass('hidden');
+        $("#" + identify).removeClass('hidden');
+        console.log('modal-abierta...', identify)
+    });
+
+    $("#myModal .close").on('click', function() {
+        $("#myModal").addClass('hidden');
+        $(".modal-wrapper").addClass('hidden');
+        console.log('modal-abierta...')
+    });
+
 })(jQuery);

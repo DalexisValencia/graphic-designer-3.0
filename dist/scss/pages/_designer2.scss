@@ -68,7 +68,7 @@ section.designer-features {
     max-width: 900px;
     margin: 0px auto;
     .designer-features--card {
-        transition: 0.5s all;
+        transition: all 400ms cubic-bezier(.47, 1.64, .41, .8);
         cursor: pointer;
         width: 45%;
         border-radius: 6px;
@@ -148,7 +148,7 @@ section.designer-features {
             box-shadow: 0px 0px 10px rgba($tertiary-brand-color, 0.5);
             position: relative;
             z-index: 1;
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
     }
     .features--card__center {
@@ -163,7 +163,46 @@ section.designer-features {
         right: 0;
         margin-left: auto;
         margin-right: auto;
-        background-color: yellow;
+        background-color: #fbddb5;
+        border: 4px solid $secondary-brand-color;
+        cursor: pointer;
+        transition: all 400ms cubic-bezier(.47, 1.64, .41, .8);
+        overflow: hidden;
+        text-decoration: none;
+        .question,
+        .question-symbol {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            transition: 0.2s all;
+        }
+        .question-symbol {
+            font: {
+                size: 100px;
+                family: 'today-shop-Bold';
+            }
+            color: $secondary-brand-color;
+        }
+        .question {
+            opacity: 0;
+            color: $secondary-brand-color;
+            font: {
+                size: 20px;
+                family: 'today-shop-Bold';
+            }
+        }
+        &:hover {
+            transform: scale(1.7);
+            .question-symbol {
+                opacity: 0;
+                margin-top: -113px;
+            }
+            .question {
+                opacity: 1;
+            }
+        }
     }
     .year-image {
         position: relative;
