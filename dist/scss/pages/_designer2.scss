@@ -1,4 +1,5 @@
-.designer-2 {
+.designer-2,
+.designer-3 {
     background: $secondary-brand-color;
     display: flex;
     justify-content: center;
@@ -201,24 +202,6 @@ section.designer-features {
             }
             .question {
                 opacity: 1;
-            }
-        }
-    }
-    .year-image {
-        position: relative;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        width: 47%;
-        padding: 15px 0;
-        >p {
-            text-align: left;
-            width: 100%;
-            min-width: auto;
-            margin-left: 10px;
-            font: {
-                size: 15px;
-                family: 'TodaySHOP-Regular';
             }
         }
     }
