@@ -10,11 +10,20 @@
      overflow: auto;
      background-color: rgb(0, 0, 0);
      background-color: rgba(0, 0, 0, 0.4);
+     transition: all 400ms cubic-bezier(.47, 1.64, .41, .8);
+     justify-content: center;
+     align-items: center;
+     display: flex;
      &.hidden {
-         display: none;
+         opacity: 0;
+         transform: scale(0.9);
+         pointer-events: none;
+         display: flex;
      }
      &:not(.hidden) {
-         display: block;
+         opacity: 1;
+         pointer-events: all;
+         transform: scale(1);
      }
  }
  /* Modal Content/Box */
@@ -96,6 +105,7 @@
      display: flex;
      justify-content: space-around;
      img {
-         width: 48%;
+         width: 45%;
+         max-width: 500px;
      }
  }
