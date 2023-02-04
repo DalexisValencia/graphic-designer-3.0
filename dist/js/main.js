@@ -44,7 +44,6 @@
             { el: $('.bottom-circle'), rate: 0.7 },
             { el: $('.splash-circle-2'), rate: 0.2 },
             { el: $('.lines-bg'), rate: 0.2 },
-            { el: $('.star3'), rate: 0.2 },
             { el: $('.splash-circle-1'), rate: 0.2 },
             { el: $('.splash-circle'), rate: 0.2 },
             { el: $('.robot'), rate: 0.4 },
