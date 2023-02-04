@@ -53,6 +53,9 @@
             family: 'Futura-condensed';
             size: 9.5vw;
         }
+        @include media-min-width {
+            font-size: 100px;
+        }
     }
     .features--card__wrapper {
         width: 100%;
@@ -67,6 +70,9 @@
                     family: 'today-shop-Bold';
                     weight: bold;
                 }
+                @include media-xs-range-1 {
+                    font-size: 2.2vw;
+                }
             }
             .card__content--text {
                 height: 65px;
@@ -75,6 +81,9 @@
                 font: {
                     size: 13px;
                     family: 'Montserrat-Medium';
+                }
+                @include media-xs-range-1 {
+                    font-size: 1.8vw;
                 }
             }
         }
